@@ -12,9 +12,11 @@ import VendorDashboard from "./pages/VendorDashboard";
 import TravelServices from "./pages/TravelServices";
 import Profile from "./pages/Profile";
 import LocationTracker from "./pages/LocationTracker";
+import Fab from "./components/Fab";
 
 export default function App() {
   return (
+    <>
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
@@ -31,5 +33,7 @@ export default function App() {
       <Route path="/profile" element={<Layout><Profile /></Layout>} />
       <Route path="/tracker" element={<Layout><LocationTracker /></Layout>} />
     </Routes>
+    <Fab  />
+    </>
   );
 }
