@@ -7,7 +7,7 @@ const popular = [
   ["Manali", "Himachal Pradesh", "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80"],
   ["Goa", "Goa", "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"],
   ["Udaipur", "Rajasthan", "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=700&q=80"],
-  ["Darjeeling", "West Bengal", "https://images.unsplash.com/photo-1544639021-a8c8a563b97c?auto=format&fit=crop&w=700&q=80"],
+  ["Darjeeling", "West Bengal", "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"],
   ["Andaman", "Andaman & Nicobar", "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80"],
 ];
 const perks = [["🏷️", "Best Price Guarantee", "Get the best deals always"], ["🛡️", "Verified Stays", "Trusted tourism partners"], ["🎧", "24x7 Support", "We are here to help"], ["🔒", "Secure Payments", "Safe & hassle-free"]];
