@@ -18,7 +18,8 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
-];
+  process.env.FRONTEND_URL,
+].filter(Boolean);
 
 app.use(
   cors({
@@ -72,7 +73,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5001;
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`TravelBoost backend running on port ${PORT}`);
-  });
+ app.listen(PORT, "0.0.0.0", () => {
+  console.log(`TravelBoost backend running on port ${PORT}`);
+});
 });
