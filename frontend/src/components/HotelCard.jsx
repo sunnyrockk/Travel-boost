@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function HotelCard({ hotel }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+    <Link
+      to={`/hotels/${hotel._id}`}
+      className="block bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition cursor-pointer"
+    >
       <div className="h-44 bg-gray-100 overflow-hidden">
         {hotel.image || hotel.imageUrl ? (
           <img
@@ -31,10 +36,17 @@ export default function HotelCard({ hotel }) {
 
           <span className="font-bold text-brand-600">
             ₹{hotel.pricePerNight || hotel.price || 0}
-            <span className="text-xs text-gray-400 font-normal"> / night</span>
+            <span className="text-xs text-gray-400 font-normal">
+              {" "}
+              / night
+            </span>
           </span>
         </div>
+
+        <div className="mt-3 text-center bg-brand-600 text-white py-2 rounded-lg text-sm font-semibold">
+          View & Book
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
